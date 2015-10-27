@@ -1,0 +1,21 @@
+{
+  "name": "meetupjs",
+  "version": "0.0.1",
+  "description": "Meetup JS CL Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/Xabadu/meetupjs.git"
+  },
+  "keywords": [
+    "meetupjs",
+    "website",
+    "js"
+  ],
+  "author": "JS Chile",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/Xabadu/meetupjs#readme"
+}
