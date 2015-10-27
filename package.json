@@ -4,7 +4,10 @@
   "description": "Meetup JS CL Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm install | webpack-dev-server",
+    "prebuild": "rm -rf index.html | rm -rf meetupjs.*.*.*.js | rm -rf *.woff2 |  rm -rf *.woff | rm -rf *.eot | rm -rf *.svg | rm -rf *.ttf | rm -rf meetupjs.*.*.*.css",
+    "build": "npm run-script prebuild | NODE_ENV=production webpack",
+    "yolo": "echo 'CREAR SCRIPT'"
   },
   "repository": {
     "type": "git",
