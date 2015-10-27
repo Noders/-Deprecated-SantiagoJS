@@ -17,5 +17,22 @@
   ],
   "author": "JS Chile",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/Xabadu/meetupjs#readme"
+  "homepage": "https://bitbucket.org/Xabadu/meetupjs#readme",
+  "devDependencies": {
+    "babel-core": "^5.8.29",
+    "babel-loader": "^5.3.2",
+    "history": "^1.12.6",
+    "hjs-webpack": "^3.1.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "babel": "^5.8.29",
+    "css-loader": "^0.21.0",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^0.13.4",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.4.0"
+  }
 }
