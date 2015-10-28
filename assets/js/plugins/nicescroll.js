@@ -115,7 +115,6 @@
      do {
          var t = ssc_cache[ssc_uniqueID(e)];
          if (t) return ssc_setCache(s, t);
-         debugger;
          if (s.push(e), c === e.scrollHeight) {
              if (!ssc_frame || ssc_root.clientHeight + 10 < c) return ssc_setCache(s, document.body)
          } else if (e.clientHeight + 10 < e.scrollHeight && (overflow = getComputedStyle(e, "").getPropertyValue("overflow"), "scroll" === overflow || "auto" === overflow)) return ssc_setCache(s, e)
