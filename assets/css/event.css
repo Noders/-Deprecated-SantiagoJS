@@ -724,63 +724,7 @@ p,
 .font-80 {
     font-size: 80px;
 }
-/* 
- Header Video
- ------------ */
 
-.video-header {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background: url(../video/event-video.jpg) no-repeat;
-    background-size: cover;
-}
-
-.header-video-module {
-    position: relative;
-}
-
-.header-video-module .header {
-    background: none;
-    z-index: 10;
-}
-
-.header-video-module .header_top-bg,
-.header-video-module .header_bottom-bg {
-    background: none;
-}
-
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
-}
-
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
-
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-}
-
-.video-container .filter {
-    z-index: 9;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 /* ================================================
    Countdown Timer
    ================================================ */
