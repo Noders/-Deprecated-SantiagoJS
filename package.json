@@ -4,7 +4,6 @@
   "description": "Meetup JS CL Website",
   "main": "index.js",
   "scripts": {
-    "start": "npm install | webpack-dev-server",
     "start": "npm install | node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "prebuild": "rm -rf index.html | rm -rf meetupjs.*.*.*.js | rm -rf *.woff2 |  rm -rf *.woff | rm -rf *.eot | rm -rf *.svg | rm -rf *.ttf | rm -rf meetupjs.*.*.*.css",
     "build": "npm run-script prebuild | NODE_ENV=production node ./node_modules/webpack/bin/webpack.js",
