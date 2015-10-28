@@ -7,7 +7,7 @@ module.exports = React.createClass({
 		        <div className="container">
 		            <div className="header_top-bg">
 		                <div className="logo">
-		                    <a href="#"><img src="images/event-logo.png" alt="event-logo" /></a>
+		                    <a href="#"><img src="/assets/images/event-logo.png" alt="event-logo" /></a>
 		                </div>
 		            </div>
 		            <h3 className="headline-support wow fadeInDown">A CREATIVE CONFERENCE</h3>

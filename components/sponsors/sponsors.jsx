@@ -10,14 +10,14 @@ module.exports = React.createClass({
 		                <p>Event is supported by easily recognisable companies and products which we use everyday.</p>
 		            </div>
 		            <div className="sponsor-slider wow bounceIn">
-		                <div><img src="images/sponsor_1.png" className="img-responsive center-block" alt="sponsor"/> </div>
-		                <div><img src="images/sponsor_2.png" className="img-responsive center-block" alt="sponsor"/> </div>
-		                <div><img src="images/sponsor_3.png" className="img-responsive center-block" alt="sponsor"/> </div>
-		                <div><img src="images/sponsor_4.png" className="img-responsive center-block" alt="sponsor"/> </div>
-		                <div><img src="images/sponsor_1.png" className="img-responsive center-block" alt="sponsor"/> </div>
-		                <div><img src="images/sponsor_2.png" className="img-responsive center-block" alt="sponsor"/> </div>
-		                <div><img src="images/sponsor_3.png" className="img-responsive center-block" alt="sponsor"/> </div>
-		                <div><img src="images/sponsor_4.png" className="img-responsive center-block" alt="sponsor"/> </div>
+		                <div><img src="/assets/images/sponsor_1.png" className="img-responsive center-block" alt="sponsor"/> </div>
+		                <div><img src="/assets/images/sponsor_2.png" className="img-responsive center-block" alt="sponsor"/> </div>
+		                <div><img src="/assets/images/sponsor_3.png" className="img-responsive center-block" alt="sponsor"/> </div>
+		                <div><img src="/assets/images/sponsor_4.png" className="img-responsive center-block" alt="sponsor"/> </div>
+		                <div><img src="/assets/images/sponsor_1.png" className="img-responsive center-block" alt="sponsor"/> </div>
+		                <div><img src="/assets/images/sponsor_2.png" className="img-responsive center-block" alt="sponsor"/> </div>
+		                <div><img src="/assets/images/sponsor_3.png" className="img-responsive center-block" alt="sponsor"/> </div>
+		                <div><img src="/assets/images/sponsor_4.png" className="img-responsive center-block" alt="sponsor"/> </div>
 		            </div>
         		</div>
     		</section>

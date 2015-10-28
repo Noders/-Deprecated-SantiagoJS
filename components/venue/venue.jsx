@@ -8,7 +8,7 @@ module.exports = React.createClass({
 					<div className="row">
                 		<div className="col-sm-6">
                     		<div className="contact-box">
-                        		<img src="images/location-icon.png" alt="location icon" className="wow zoomIn" />
+                        		<img src="/assets/images/location-icon.png" alt="location icon" className="wow zoomIn" />
                         		<h5>ADDRESS</h5>
                         		<p>Level 5, Meet n Party,
                             	<br/>Barnhusgatan 7 b,
@@ -19,7 +19,7 @@ module.exports = React.createClass({
                 		</div>
 		                <div className="col-sm-6">
 		                    <div className="contact-box">
-		                        <img src="images/email-icon.png" alt="email icon" className="wow zoomIn" data-wow-delay="0.3s" />
+		                        <img src="/assets/images/email-icon.png" alt="email icon" className="wow zoomIn" data-wow-delay="0.3s" />
 		                        <h5>CONTACT</h5>
 		                        <p><a href="mailto:gather@eventwebsite.com">gather@eventwebsite.com</a>
 		                            <br/> <a href="mailto:sponsor@thisevent.com">sponsor@thisevent.com</a>

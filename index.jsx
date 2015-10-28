@@ -11,8 +11,7 @@ require('./assets/css/plugins/flexslider.styl');
 require('./assets/css/event.css');
 require('./assets/css/themes/yellow.styl');
 
-require('./assets/js/plugins/pace.js');
-require('./assets/js/plugins/google-map.js');
+require('./assets/js/plugins/');
 require('./assets/js/main.js');
 
 var React = require('react');
