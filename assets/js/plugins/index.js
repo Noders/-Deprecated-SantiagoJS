@@ -1,0 +1,13 @@
+require('./appear.js');
+require('./count-to.js');
+require('./countdown.js');
+require('./directions.js');
+require('./google-map.js');
+require('./index.js');
+require('./infobox.js');
+require('./magnific-popup.js');
+require('./nicescroll.js');
+require('./pace.js');
+require('./parallax.js');
+require('./validate.js');
+require('./wow.js');

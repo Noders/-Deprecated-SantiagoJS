@@ -9,7 +9,6 @@ Copyright © All rights Reserved
 Surjith S M / @surjithctly
 
 */
-
 $(function() {
 
     "use strict";
@@ -90,7 +89,7 @@ $(function() {
     /* 
        SLICK SLIDER
        ------------ */
-
+/*
     if ($('.slick-slider').length) {
         $('.slick-slider').slick({
             slidesToShow: 6,
@@ -121,11 +120,11 @@ $(function() {
             }]
         });
     }
-
+*/
     /* 
     SPONSORS
     -------- */
-
+/*
     if ($('.sponsor-slider').length) {
         $('.sponsor-slider').slick({
             centerMode: true,
@@ -152,11 +151,11 @@ $(function() {
             }]
         });
     }
-
+*/
     /* 
        SPEAKERS
        -------- */
-
+/*
     if ($('.speaker-slider').length) {
         $('.speaker-slider').slick({
             slidesToShow: 6,
@@ -181,7 +180,7 @@ $(function() {
             }]
         });
     }
-
+*/
     /* ================================================
        Scroll Functions
        ================================================ */
@@ -248,7 +247,7 @@ if ($('.popup-gallery').length) {
 /* ================================================
    jQuery Validate - Reset Defaults
    ================================================ */
-
+/*
 $.validator.setDefaults({
     highlight: function(element) {
         $(element).closest('.form-group').addClass('has-error');
@@ -270,6 +269,7 @@ $.validator.setDefaults({
     }
 });
 
+*/
 /* ================================================
    Add to Calendar
    ================================================ */
@@ -317,6 +317,7 @@ window.twttr = (function(d, s, id) {
    ================================================ */
 
 // validate Registration Form
+/*
 $("#paypal-regn").validate({
     rules: {
         first_name: "required",
@@ -343,6 +344,7 @@ $("#paypal-regn").validate({
     }
 });
 
+*/
 /*
  * // End $ Strict Function
  * ------------------------ */
