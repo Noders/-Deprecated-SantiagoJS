@@ -43,7 +43,8 @@ $(function() {
     if ($('.flexslider').length) {
         $('.flexslider').flexslider({
             animation: "slide",
-            useCSS: Modernizr.touch
+            //useCSS: Modernizr.touch
+            useCSS: true
         });
     }
 
