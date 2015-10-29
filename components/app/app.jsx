@@ -10,6 +10,8 @@ var Map = require('../map');
 var Venue = require('../venue');
 var Footer = require('../footer');
 
+var Social = require('../../api/social');
+
 module.exports = React.createClass({
 	render: function() {
 		return(
@@ -23,7 +25,7 @@ module.exports = React.createClass({
 				<Subscriptions/>
 				<Map/>
 				<Venue/>
-				<Footer/>
+				<Footer data={Social}/>
 			</div>
 		);
 	}	
