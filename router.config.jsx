@@ -1,12 +1,14 @@
 var React = require('react');
-var Router = require('react-router').Router;
-var Route = require('react-router').Route;
-var Link = require('react-router').Link;
+var {Router, Route, Link} =  require('react-router');
+var History =  require('history/lib/createHashHistory');
+
 
 var App = require('./components/app');
 
 var main = (
-	<Router>
+	<Router history={History({
+			queryKey: false
+		})}>
 		<Route path="/" component={App}/>
 	</Router>
 );
