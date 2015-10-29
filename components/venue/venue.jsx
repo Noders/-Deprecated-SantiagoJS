@@ -1,7 +1,7 @@
 var React = require('react');
 
 module.exports = React.createClass({
-	render: function() {
+	render: function() { console.log(this.props.location);
 		return(
 			<div className="highlight">
         		<div className="container">
@@ -9,23 +9,24 @@ module.exports = React.createClass({
                 		<div className="col-sm-6">
                     		<div className="contact-box">
                         		<img src="/assets/images/location-icon.png" alt="location icon" className="wow zoomIn" />
-                        		<h5>ADDRESS</h5>
-                        		<p>Level 5, Meet n Party,
-                            	<br/>Barnhusgatan 7 b,
-                            	<br/> 125 Stockholm, Sweden
+                        		<h5>{this.props.location.name}</h5>
+                        		<p>{this.props.location.address.street}
+                            	<br/>{this.props.location.address.suburb}
+                            	<br/>{this.props.location.address.city}
                             	<br/>
-                            	<br/>Time: 10:30 AM to 3:30 PM</p>
+                            	<br/><strong>Desde las {this.props.location.hours.start} a las {this.props.location.hours.end}</strong></p>
                     		</div>
                 		</div>
 		                <div className="col-sm-6">
 		                    <div className="contact-box">
 		                        <img src="/assets/images/email-icon.png" alt="email icon" className="wow zoomIn" data-wow-delay="0.3s" />
-		                        <h5>CONTACT</h5>
-		                        <p><a href="mailto:gather@eventwebsite.com">gather@eventwebsite.com</a>
-		                            <br/> <a href="mailto:sponsor@thisevent.com">sponsor@thisevent.com</a>
+		                        <h5>Contacto</h5>
+		                        <p><a href={'mailto:'+this.props.contact.email}>{this.props.contact.email}</a>
 		                            <br/>
-		                            <br/> +1 400 253 1800
-		                            <br/> +33 230 58 5420
+		                            <br/>
+		                            <br/>
+		                            <br/>
+		                            <br/>
 		                        </p>
 		                    </div>
 		                </div>

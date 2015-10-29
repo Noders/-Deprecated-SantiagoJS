@@ -10,6 +10,9 @@ var Map = require('../map');
 var Venue = require('../venue');
 var Footer = require('../footer');
 
+/* Data */
+var Contact = require('../../api/contact');
+var Location = require('../../api/location');
 var Social = require('../../api/social');
 
 module.exports = React.createClass({
@@ -24,7 +27,7 @@ module.exports = React.createClass({
 				<Sponsors/>
 				<Subscriptions/>
 				<Map/>
-				<Venue/>
+				<Venue location={Location} contact={Contact}/>
 				<Footer data={Social}/>
 			</div>
 		);
