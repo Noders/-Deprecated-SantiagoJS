@@ -1,6 +1,6 @@
-# Sitio Meetup JS CL #
+# Meetup JS CL Website #
 
-* Versión actual: 0.0.1
+* Current version: 0.0.1
 
 ## Getting started ##
 
@@ -41,6 +41,7 @@ Just clone the repo and create a branch. We have simple naming conventions, so i
 If you're building something new:
 
     feature/same-as-above
+
 ####Commits and PR####
 
 Please be clear in your commit messages. Use a short and clear message to describe what that commit does. Example:
@@ -50,6 +51,7 @@ Please be clear in your commit messages. Use a short and clear message to descri
 This will help you identify whatever your PR is about and have a better context for our code review.
 
 PR submission messages on the other hand, should be as clear as possible, so feel free to describe what's the problem and how this commit fixes it.
+
 ####Coding conventions####
 
 None at the moment, just look at the project and try to follow along, so it's easier for the rest to understand what you're doing.
@@ -60,7 +62,7 @@ Yeah, have fun :D
 
 ### Useful Links ###
 
-* [Sitio Meetup JS CL](http://www.meetupjs.cl)
+* [Meetup JS CL Website](http://www.meetupjs.cl)
 * [Twitter](http://twitter.com/meetupjs_cl)
 
 ### License ###
