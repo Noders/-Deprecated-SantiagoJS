@@ -1996,3 +1996,7 @@ footer {
 .comment-reply-link:hover {
     color: #888;
 }
+
+.sponsors {
+    margin-bottom: 20px;
+}
