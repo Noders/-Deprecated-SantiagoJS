@@ -14,6 +14,7 @@ var Footer = require('../footer');
 var Contact = require('../../api/contact');
 var Location = require('../../api/location');
 var Social = require('../../api/social');
+var Partners = require('../../api/sponsors');
 
 module.exports = React.createClass({
 	render: function() {
@@ -24,7 +25,7 @@ module.exports = React.createClass({
 				<Speakers/>
 				<Reasons/>
 				<Faq/>
-				<Sponsors/>
+				<Sponsors sponsors={Partners}/>
 				<Subscriptions/>
 				<Map/>
 				<Venue location={Location} contact={Contact}/>
