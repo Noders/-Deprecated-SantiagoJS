@@ -1,4 +1,5 @@
 var React = require('react');
+require('./event.styl');
 
 module.exports = React.createClass({
 	render: function() {
