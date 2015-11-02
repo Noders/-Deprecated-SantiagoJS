@@ -2,7 +2,6 @@ var React = require('react');
 var {Router, Route, Link} =  require('react-router');
 var History =  require('history/lib/createHashHistory');
 
-
 var App = require('./components/app');
 
 var main = (
