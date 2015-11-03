@@ -13,8 +13,10 @@ var Footer = require('../footer');
 /* Data */
 var Contact = require('../../api/contact');
 var Location = require('../../api/location');
-var Social = require('../../api/social');
 var Partners = require('../../api/sponsors');
+var Questions = require('../../api/faq');
+var Social = require('../../api/social');
+
 
 module.exports = React.createClass({
 	render: function() {
@@ -24,7 +26,7 @@ module.exports = React.createClass({
 				<Calendar/>
 				<Speakers/>
 				<Reasons/>
-				<Faq/>
+				<Faq questions={Questions}/>
 				<Sponsors sponsors={Partners}/>
 				<Subscriptions/>
 				<Map/>
