@@ -1,8 +1,7 @@
 var React = require('react');
 var Event = require('../event');
-var Calendar = require('../calendar');
+var Code = require('../code');
 var Speakers = require('../speakers');
-var Reasons = require('../reasons');
 var Faq = require('../faq');
 var Sponsors = require('../sponsors');
 var Subscriptions = require('../subscriptions');
@@ -23,9 +22,8 @@ module.exports = React.createClass({
 		return(
 			<div>
 				<Event/>
-				<Calendar/>
+				<Code/>
 				<Speakers/>
-				<Reasons/>
 				<Faq questions={Questions}/>
 				<Sponsors sponsors={Partners}/>
 				<Subscriptions/>
