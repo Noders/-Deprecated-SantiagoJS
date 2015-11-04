@@ -12,7 +12,7 @@ module.exports = React.createClass({
 			<section className="faq">
 		        <div className="container">
 		            <div className="section-title">
-		                <h5>Dudas dudosas</h5>
+		                <h5>Preguntas Frecuentes</h5>
 		            </div>
 		            <div className="row">
 		                <div className="col-md-6 wow fadeInLeft" data-wow-duration="2s">
