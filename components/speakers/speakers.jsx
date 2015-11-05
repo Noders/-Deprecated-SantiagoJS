@@ -18,8 +18,8 @@ module.exports = React.createClass({
 		return(
 			<section className="speakers col-xs-12 no-padding-v" id="speakers">
 				<div className="container col-md-8 col-md-offset-2">
-					<div className="sectiPeopleon-title wow fadeInUp text-center">
-						<h4>OUR SPEAKERS</h4>
+					<div className="section-title wow fadeInUp text-center">
+						<h4>Presentan en este Meetup</h4>
 					</div>
 					<div className="speaker-slider col-xs-12">
 						{this.state.people}
