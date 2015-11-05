@@ -24,11 +24,11 @@ module.exports = React.createClass({
 				<Event/>
 				<Code/>
 				<Speakers people={People} />
+				<Map />
+				<Venue location={Location} contact={Contact} />
 				<Faq questions={Questions} />
 				<Sponsors sponsors={Partners} />
 				<Subscriptions />
-				<Map />
-				<Venue location={Location} contact={Contact} />
 				<Footer data={Social} />
 			</div>
 		);
