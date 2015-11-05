@@ -11,6 +11,7 @@ module.exports = React.createClass({
 	},
 	componentDidMount:function(){
 		this.state.date = Moment(this.props.event.date).format('DD MMMM YYYY');
+		this.state.url = this.props.event.url;
 		this.setState(this.state);
 		/*
 		Request
@@ -44,7 +45,7 @@ module.exports = React.createClass({
 						<p className="event_where">{this.props.location.address.city} - {this.props.location.address.street}</p>
 					</div>
 					<div className="header_bottom-bg">
-						<a className="btn btn-default btn-xl wow zoomIn" data-wow-delay="0.3s" href="#" data-toggle="modal" href={this.state.url}>RESERVAR MI ENTRADA</a>
+						<a className="btn btn-default btn-xl wow zoomIn" data-wow-delay="0.3s" data-toggle="modal" href={this.state.url} target="_blank">RESERVAR MI ENTRADA</a>
 						<p className="cta_urgency wow fadeIn" data-wow-delay="0.5s"><small>Apurate! Que son pocos cupos!</small></p>
 					</div>
 				</div>
