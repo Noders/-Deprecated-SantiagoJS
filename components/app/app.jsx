@@ -15,7 +15,7 @@ var Location = require('../../api/location');
 var Partners = require('../../api/sponsors');
 var Questions = require('../../api/faq');
 var Social = require('../../api/social');
-
+var People = require('../../api/speakers');
 
 module.exports = React.createClass({
 	render: function() {
@@ -23,13 +23,13 @@ module.exports = React.createClass({
 			<div>
 				<Event/>
 				<Code/>
-				<Speakers/>
-				<Faq questions={Questions}/>
-				<Sponsors sponsors={Partners}/>
-				<Subscriptions/>
-				<Map/>
-				<Venue location={Location} contact={Contact}/>
-				<Footer data={Social}/>
+				<Speakers people={People} />
+				<Faq questions={Questions} />
+				<Sponsors sponsors={Partners} />
+				<Subscriptions />
+				<Map />
+				<Venue location={Location} contact={Contact} />
+				<Footer data={Social} />
 			</div>
 		);
 	}	
