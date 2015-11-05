@@ -3,7 +3,7 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function() {
 		return(
-			<section className="highlight">
+			<section className="highlight col-xs-12 no-padding-v">
 		        <div className="container">
 		            <p className="lead text-center">Todos los asistentes, voluntarios e incluso auspiciadores de los Meetups deben seguir y respetar nuestro código de conducta.</p>
 		            <div className="text-center">

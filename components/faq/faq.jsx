@@ -9,7 +9,7 @@ module.exports = React.createClass({
 			});
 		}
 		return(
-			<section className="faq">
+			<section className="faq  col-xs-12 no-padding-v">
 		        <div className="container">
 		            <div className="section-title">
 		                <h5>Preguntas Frecuentes</h5>

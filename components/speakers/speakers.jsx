@@ -16,7 +16,7 @@ module.exports = React.createClass({
 	},
 	render: function() {
 		return(
-			<section className="speakers" id="speakers">
+			<section className="speakers col-xs-12 no-padding-v" id="speakers">
 				<div className="container col-md-8 col-md-offset-2">
 					<div className="sectiPeopleon-title wow fadeInUp text-center">
 						<h4>OUR SPEAKERS</h4>

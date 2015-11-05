@@ -3,7 +3,7 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function() {
 		return(
-			<div className="highlight">
+			<div className="highlight  col-xs-12 no-padding-v">
 		        <div className="container">
 		            <div className="row">
 		                <form action="php/subscribe.php" method="post" className="form subscribe-form" id="subscribeform">
