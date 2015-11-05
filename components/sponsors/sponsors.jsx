@@ -9,7 +9,7 @@ module.exports = React.createClass({
 			});
 		}
 		return(
-			<section className="sponsors" id="sponsors">
+			<section className="sponsors  col-xs-12 no-padding-v" id="sponsors">
 				<div className="container">
 		            <div className="section-title wow fadeInUp">
 		                <h4>PATROCINAN</h4>

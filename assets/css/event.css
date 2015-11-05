@@ -2000,3 +2000,13 @@ footer {
 .sponsors {
     margin-bottom: 20px;
 }
+
+.no-margin-v{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.no-padding-v{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

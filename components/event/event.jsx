@@ -24,7 +24,7 @@ module.exports = React.createClass({
 	},
 	render: function() {
 		return(
-			<header id="top" className="header">
+			<header id="top" className="header col-xs-12 no-padding-v">
 				<div className="container">
 					<div className="header_top-bg">
 						<div className="logo">

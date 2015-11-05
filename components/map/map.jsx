@@ -38,7 +38,7 @@ module.exports = React.createClass({
 	},
 	render: function() {
 		return(
-			<div className="g-maps" id="venue">
+			<div className="g-maps col-xs-12 no-padding-v" id="venue">
         		<div className="map" id="map_canvas"></div>
 			</div>
 		);

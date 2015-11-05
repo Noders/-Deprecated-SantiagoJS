@@ -3,7 +3,7 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function() {
 		return(
-			<div className="highlight">
+			<div className="highlight  col-xs-12 no-padding-v">
         		<div className="container">
 					<div className="row">
                 		<div className="col-sm-6">
