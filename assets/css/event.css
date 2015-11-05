@@ -583,13 +583,13 @@ p,
 }
 
 .header_top-bg {
-    background: url('../images/header_graphic_1.png') no-repeat top center;
+    background: url('../images/headerg-top.png') no-repeat top center;
     min-height: 155px;
     padding: 80px 0 50px;
 }
 
 .header_bottom-bg {
-    background: url('../images/header_graphic_2.png') no-repeat bottom center;
+    background: url('../images/headerg-bottom.png') no-repeat bottom center;
     min-height: 155px;
     padding: 20px 0 100px;
 }
@@ -631,7 +631,7 @@ p,
 
 .header small,
 .sub-header small {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 767px) {
@@ -2013,4 +2013,20 @@ footer {
 
 .speakers {
     padding-bottom: 70px;
+}
+
+.shadow-text {
+    text-shadow: 1px 1px 3px black;
+}
+
+.shadow-text-sm {
+    text-shadow: 1px 1px 1px black;
+}
+
+.btn-black {
+    background: #2d2d2d;
+}
+
+.black-text {
+    color: black;
 }
