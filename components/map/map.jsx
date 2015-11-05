@@ -12,7 +12,8 @@ module.exports = React.createClass({
 		var options = {
 			zoom: 16, 
 			center: this.state.grouponLoc,
-		    disableDefaultUI: true
+		    disableDefaultUI: true,
+		    scrollwheel: false
 		};
 		this.state.directionsService = new google.maps.DirectionsService;
 		this.state.directionsDisplay = new google.maps.DirectionsRenderer;
@@ -23,8 +24,8 @@ module.exports = React.createClass({
 		this.state.directionsDisplay.setMap(this.state.map);
 
 		this.state.directionsService.route({
-			origin: that.state.metroLoc,  // Haight.
-			destination: that.state.grouponLoc,  // Ocean Beach.
+			origin: that.state.metroLoc,
+			destination: that.state.grouponLoc,
 			travelMode: google.maps.TravelMode['WALKING']
 			}, function(response, status) {
 			if (status == google.maps.DirectionsStatus.OK) {
