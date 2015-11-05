@@ -7,9 +7,9 @@ module.exports = React.createClass({
         };
     },
 	componentWillMount:function(){
-		var people = []
+		var people = [];
 		this.props.people.forEach(function(el,i,as){
-			people.push(<Speaker data={el}/>)
+			people.push(<Speaker data={el}/>);
 		});
 		this.state.people = people;
 		this.setState(this.state)
@@ -17,15 +17,15 @@ module.exports = React.createClass({
 	render: function() {
 		return(
 			<section className="speakers" id="speakers">
-		        <div className="container">
-		            <div className="sectiPeopleon-title wow fadeInUp">
-		                <h4>OUR SPEAKERS</h4>
-		            </div>
-		            <div className="speaker-slider">
-		                {this.state.people}
-		            </div>/
-		        </div>
-		    </section>
+				<div className="container col-md-8 col-md-offset-2">
+					<div className="sectiPeopleon-title wow fadeInUp text-center">
+						<h4>OUR SPEAKERS</h4>
+					</div>
+					<div className="speaker-slider col-xs-12">
+						{this.state.people}
+					</div>
+				</div>
+			</section>
 		);
 	}	
 });

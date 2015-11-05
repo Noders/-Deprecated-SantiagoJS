@@ -20,7 +20,7 @@ module.exports = React.createClass({
 	render: function() {
 		return(
 			<div className="speaker-info wow fadeIn col-md-4" data-wow-delay="0s">
-                <img src={this.state.img} alt="avatar" className="img-responsive center-block"/>
+                <img src={this.state.img} alt="avatar" className="img-responsive img-thumbnail center-block"/>
                 <p>{this.state.name}</p>
                 <span>{this.state.url}</span>
             </div>
