@@ -15,15 +15,15 @@ var Location = require('../../api/location');
 var Partners = require('../../api/sponsors');
 var Questions = require('../../api/faq');
 var Social = require('../../api/social');
-var People = require('../../api/speakers');
+var EventData = require('../../api/event');
 
 module.exports = React.createClass({
 	render: function() {
 		return(
 			<div>
-				<Event/>
+				<Event location={Location} event={EventData}/>
 				<Code/>
-				<Speakers people={People} />
+				<Speakers people={EventData.speakers} />
 				<Map />
 				<Venue location={Location} contact={Contact} />
 				<Faq questions={Questions} />
