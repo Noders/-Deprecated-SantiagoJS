@@ -22,7 +22,7 @@ module.exports = React.createClass({
 			<div className="speaker-info wow fadeIn col-md-4" data-wow-delay="0s">
                 <img src={this.state.img} alt="avatar" className="img-responsive img-thumbnail center-block"/>
                 <p>{this.state.name}</p>
-                <span>{this.state.url}</span>
+                <span>{this.state.talk}</span>
             </div>
 		);
 	}	
