@@ -9,17 +9,9 @@ module.exports = React.createClass({
 		.post('http://api.meetupjs.cl/subscribe')
 		.set('content-type', 'application/json')
 		.send({'email': this.refs.email.getDOMNode().value})
-		.end(function(err, res) {
+		.end(function(code, msg) {
 			var state = that.state;
-			if(err) {
-				console.log(err);
-				state.returnMsg = err;
-				that.setState(state);
-				return;
-			}
-			console.log(res);
-			state.returnMsg = res;
-			that.setState(state);
+			that.setState(msg);
 			return;
 		});
 	},
