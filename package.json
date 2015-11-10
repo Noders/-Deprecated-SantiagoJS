@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/Xabadu/meetupjs.git"
+    "url": "git@github.com:JavascriptChile/meetupjscl.github.io.git"
   },
   "keywords": [
     "meetupjs",
