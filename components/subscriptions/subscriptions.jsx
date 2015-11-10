@@ -6,10 +6,9 @@ module.exports = React.createClass({
 		e.preventDefault();
 		var that = this;
 		Request
-		.post(this.props.subscribers.api.base_url + 'lists/b27c7c6d4f/members')
-		.set('Authorization', 'apikey ' + this.props.subscribers.api.key)
+		.post('http://api.meetupjs.cl/subscribe')
 		.set('content-type', 'application/json')
-		.send({'email_address': this.refs.email.getDOMNode().value, 'status': 'subscribed'})
+		.send({'email': this.refs.email.getDOMNode().value})
 		.end(function(err, res) {
 			var state = that.state;
 			if(err) {
