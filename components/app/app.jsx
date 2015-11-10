@@ -11,11 +11,11 @@ var Footer = require('../footer');
 
 /* Data */
 var Contact = require('../../api/contact');
+var EventData = require('../../api/event');
 var Location = require('../../api/location');
 var Partners = require('../../api/sponsors');
 var Questions = require('../../api/faq');
 var Social = require('../../api/social');
-var EventData = require('../../api/event');
 
 module.exports = React.createClass({
 	render: function() {

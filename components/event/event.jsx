@@ -9,7 +9,7 @@ module.exports = React.createClass({
 		}
 	},
 	componentDidMount:function(){
-		this.state.date = Moment(this.props.event.date).format('DD MMMM YYYY');
+		this.state.date = Moment(this.props.event.date).locale('es').format('DD MMMM YYYY');
 		this.state.url = this.props.event.url;
 		this.setState(this.state);
 	},
