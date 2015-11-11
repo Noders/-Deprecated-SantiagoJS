@@ -59,5 +59,7 @@
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-notification": "^2.3.0"
+  }
 }

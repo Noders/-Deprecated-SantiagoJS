@@ -1,5 +1,6 @@
 var React = require('react');
 var Request = require('superagent');
+var Notification = require('react-notification');
 
 module.exports = React.createClass({
 	addSubscriber: function(e) {
@@ -10,15 +11,42 @@ module.exports = React.createClass({
 		.set('content-type', 'application/json')
 		.send({'email': this.refs.email.getDOMNode().value})
 		.end(function(code, msg) {
+			console.log(msg);
 			var state = that.state;
-			that.setState(msg);
+			state.message = msg.text;
+			state.isActive = true;
+			if(msg.statusCode === 200) {
+				state.styles = {
+					backgroundColor: 'rgb(192,216,144)',
+					color: 'rgb(20, 27, 32)'
+				};
+			} else if(msg.statusCode === 401) {
+				state.styles = {
+					backgroundColor: 'rgb(97, 172, 234)',
+					color: 'rgb(20, 27, 32)'
+				};
+			}
+			that.setState(state);
 			return;
 		});
 	},
 	getInitialState: function() {
 		return {
-			returnMsg: ''
+			returnMsg: '',
+			message: '',
+	      	action: 'Cerrar',
+	      	dismissAfter: 2000,
+	      	isActive: false,
+	      	styles: {}
 		}
+	},
+	handleNotification: function() {
+		console.log('ea');
+		this.setState({
+	      notification: {
+	        isActive: false,
+	      },
+	    })
 	},
 	render: function() {
 		return(
@@ -38,7 +66,9 @@ module.exports = React.createClass({
 		                        <button type="submit" className="btn btn-lg btn-success btn-block" id="js-subscribe-btn">Suscribirse →</button>
 		                    </div>
 		                </form>
+		                <Notification message={this.state.message} action={this.state.action} isActive={this.state.isActive} style={this.state.styles} onClick={this.handleNotification} />
 		            </div>
+
 		        </div>
 		    </div>
 		);
