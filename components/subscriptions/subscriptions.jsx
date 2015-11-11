@@ -13,11 +13,11 @@ module.exports = React.createClass({
 		.end(function(code, msg) {
 			var state = that.state;
 			if(msg.statusCode === 200) {
-				state.type = "¡Genial! ¡Ya estás suscrito a nuestro newsletter! :)";
-				state.message = msg.text;
+				state.type = "success";
+				state.message = <div><p>Genial! Ya estas suscrito a nuestro Newsletter<br/>Nos vemos en los meetups!</p></div>;
 			} else if(msg.statusCode === 401) {
 				state.type = 'error';
-				state.message = "¡Error! Intenta nuevamente, o envíanos un mensaje. Tenemos Twitter, mail, facebook, birddy y palomas mensajeras! ;)";
+				state.message = <div><p>¡Error! Intenta nuevamente, o envíanos un mensaje.<br/>Tenemos Twitter, mail, facebook, birddy y palomas mensajeras! ;)</p></div>;
 			}
 			that.setState(state);
 			that._addNotification();
