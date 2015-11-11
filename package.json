@@ -60,6 +60,7 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
-    "react-notification": "^2.3.0"
+    "react-notification": "^2.3.0",
+    "react-notification-system": "^0.1.17"
   }
 }
