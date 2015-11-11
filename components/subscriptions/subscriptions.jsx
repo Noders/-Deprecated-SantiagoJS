@@ -1,6 +1,6 @@
 var React = require('react');
 var Request = require('superagent');
-var Notification = require('react-notification');
+var NotificationSystem = require('react-notification-system');
 
 module.exports = React.createClass({
 	addSubscriber: function(e) {
@@ -11,22 +11,16 @@ module.exports = React.createClass({
 		.set('content-type', 'application/json')
 		.send({'email': this.refs.email.getDOMNode().value})
 		.end(function(code, msg) {
-			console.log(msg);
 			var state = that.state;
-			state.message = msg.text;
-			state.isActive = true;
 			if(msg.statusCode === 200) {
-				state.styles = {
-					backgroundColor: 'rgb(192,216,144)',
-					color: 'rgb(20, 27, 32)'
-				};
+				state.type = "Genial! Ya estás suscrito a nuestro newsletter! :)";
+				state.message = msg.text;
 			} else if(msg.statusCode === 401) {
-				state.styles = {
-					backgroundColor: 'rgb(97, 172, 234)',
-					color: 'rgb(20, 27, 32)'
-				};
+				state.type = 'error';
+				state.message = "Error! Intenta nuevamente, o envíanos un msj por twitter o mail.";
 			}
 			that.setState(state);
+			that._addNotification();
 			return;
 		});
 	},
@@ -34,19 +28,20 @@ module.exports = React.createClass({
 		return {
 			returnMsg: '',
 			message: '',
-	      	action: 'Cerrar',
-	      	dismissAfter: 2000,
-	      	isActive: false,
-	      	styles: {}
+			styles: { // Applied to every notification, regardless of the notification level
+      			margin: '10x 5px 2px 1px'
+    		},
 		}
 	},
-	handleNotification: function() {
-		console.log('ea');
-		this.setState({
-	      notification: {
-	        isActive: false,
-	      },
-	    })
+	componentDidMount: function() {
+		this._notificationSystem = this.refs.notificationSystem;
+	},
+
+	_addNotification: function(event) {
+		this._notificationSystem.addNotification({
+			message: this.state.message,
+			level: this.state.type
+		});
 	},
 	render: function() {
 		return(
@@ -66,7 +61,7 @@ module.exports = React.createClass({
 		                        <button type="submit" className="btn btn-lg btn-success btn-block" id="js-subscribe-btn">Suscribirse →</button>
 		                    </div>
 		                </form>
-		                <Notification message={this.state.message} action={this.state.action} isActive={this.state.isActive} style={this.state.styles} onClick={this.handleNotification} />
+                        <NotificationSystem ref="notificationSystem" style={this.state.styles}/>
 		            </div>
 
 		        </div>
