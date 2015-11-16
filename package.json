@@ -1,6 +1,6 @@
 {
   "name": "meetupjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Meetup JS CL Website",
   "main": "index.js",
   "scripts": {
