@@ -2,10 +2,10 @@ module.exports = {
     url:'http://www.meetup.com/es/dynlangchile/events/221804274/',
     date:'11/11/2015',
     speakers:[{
-        "name": "Felipe Torres",
-        "img": "https://placehold.it/130?text=Speaker+1",
+        "name": "Yoran Brondsema",
+        "img": "../../assets/images/speaker1.jpg",
         "talk": {
-            "title": "Charla sobre tema xxx xx xxxx xx",
+            "title": "Ember JS Framework",
             "description": "Aprende sobre xxx xx xxxx xx de manera cool y entretenida y blah blah blah en 20 minutos"
         },
         "social": [{
@@ -13,10 +13,10 @@ module.exports = {
             "url": "www.aviato.com"
         }]
     }, {
-        "name": "Fernando Larrañaga",
-        "img": "https://placehold.it/130?text=Speaker+2",
+        "name": "Claudio Castro",
+        "img": "../../assets/images/speaker2.jpg",
         "talk": {
-            "title": "Charla sobre tema yy yyy yy yyyy",
+            "title": "NodeJS y Amazon Opsworks",
             "description": "Aprende sobre yy yyy yy yyyy de manera cool y entretenida y blah blah blah en 20 minutos"
         },
         "social": [{
@@ -24,10 +24,10 @@ module.exports = {
             "url": "www.aviato.com"
         }]
     }, {
-        "name": "Estiv Llobs",
-        "img": "https://placehold.it/130?text=Speaker+3",
+        "name": "Jairo Pereira",
+        "img": "../../assets/images/speaker3.jpg",
         "talk": {
-            "title": "Charla sobre tema yy yyy yy yyyy",
+            "title": "3 different ways to render your JS games",
             "description": "Aprende sobre yy yyy yy yyyy de manera cool y entretenida y blah blah blah en 20 minutos"
         },
         "social": [{
