@@ -2016,17 +2016,17 @@ footer {
 }
 
 .shadow-text {
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 3px black !important;
 }
 
 .shadow-text-sm {
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black !important;
 }
 
 .btn-black {
-    background: #2d2d2d;
+    background: #2d2d2d !important;
 }
 
 .black-text {
-    color: black;
+    color: black !important;
 }

@@ -5,7 +5,7 @@ module.exports = React.createClass({
 		var questionsList = [];
 		if(this.props.questions.length > 0) {
 			this.props.questions.forEach(function(faq){
-				questionsList.push(<div><h6 className="faq-title">{faq.question}</h6><p dangerouslySetInnerHTML={{__html: faq.answer}}></p></div>);
+				questionsList.push(<div key={faq.question}><h6 className="faq-title">{faq.question}</h6><p dangerouslySetInnerHTML={{__html: faq.answer}}></p></div>);
 			});
 		}
 		return(

@@ -1,5 +1,6 @@
 var React = require('react');
 var Request = require('superagent');
+var NotificationSystem = require('react-notification-system');
 
 module.exports = React.createClass({
 	addSubscriber: function(e) {
@@ -11,14 +12,36 @@ module.exports = React.createClass({
 		.send({'email': this.refs.email.getDOMNode().value})
 		.end(function(code, msg) {
 			var state = that.state;
-			that.setState(msg);
+			if(msg.statusCode === 200) {
+				state.type = "success";
+				state.message = <div><p>Genial! Ya estas suscrito a nuestro Newsletter<br/>Nos vemos en los meetups!</p></div>;
+			} else if(msg.statusCode === 401) {
+				state.type = 'error';
+				state.message = <div><p>¡Error! Intenta nuevamente, o envíanos un mensaje.<br/>Tenemos Twitter, mail, facebook, birddy y palomas mensajeras! ;)</p></div>;
+			}
+			that.setState(state);
+			that._addNotification();
 			return;
 		});
 	},
 	getInitialState: function() {
 		return {
-			returnMsg: ''
+			returnMsg: '',
+			message: '',
+			styles: { // Applied to every notification, regardless of the notification level
+      			margin: '10x 5px 2px 1px'
+    		},
 		}
+	},
+	componentDidMount: function() {
+		this._notificationSystem = this.refs.notificationSystem;
+	},
+
+	_addNotification: function(event) {
+		this._notificationSystem.addNotification({
+			message: this.state.message,
+			level: this.state.type
+		});
 	},
 	render: function() {
 		return(
@@ -38,7 +61,9 @@ module.exports = React.createClass({
 		                        <button type="submit" className="btn btn-lg btn-success btn-block" id="js-subscribe-btn">Suscribirse →</button>
 		                    </div>
 		                </form>
+                        <NotificationSystem ref="notificationSystem" style={this.state.styles}/>
 		            </div>
+
 		        </div>
 		    </div>
 		);
