@@ -1,11 +1,11 @@
 module.exports = {
-    url:'http://www.meetup.com/es/dynlangchile/events/221804274/',
-    date:'11/11/2015',
+    url:'http://www.meetup.com/es/Javascript-Chile/events/226968400/',
+    date:'3/12/2015',
     speakers:[{
-        "name": "Yoran Brondsema",
-        "img": "../../assets/images/speaker1.jpg",
+        "name": "Sebastian Witalec",
+        "img": "../../assets/images/speaker5.png",
         "talk": {
-            "title": "Ember JS Framework",
+            "title": "NativeScript",
             "description": "Aprende sobre xxx xx xxxx xx de manera cool y entretenida y blah blah blah en 20 minutos"
         },
         "social": [{
@@ -13,21 +13,10 @@ module.exports = {
             "url": "www.aviato.com"
         }]
     }, {
-        "name": "Claudio Castro",
-        "img": "../../assets/images/speaker2.jpg",
+        "name": "Wil Alvarez",
+        "img": "../../assets/images/speaker4.jpg",
         "talk": {
-            "title": "NodeJS y Amazon Opsworks",
-            "description": "Aprende sobre yy yyy yy yyyy de manera cool y entretenida y blah blah blah en 20 minutos"
-        },
-        "social": [{
-            "type": "github",
-            "url": "www.aviato.com"
-        }]
-    }, {
-        "name": "Jairo Pereira",
-        "img": "../../assets/images/speaker3.jpg",
-        "talk": {
-            "title": "3 different ways to render your JS games",
+            "title": "I-Tier Framework",
             "description": "Aprende sobre yy yyy yy yyyy de manera cool y entretenida y blah blah blah en 20 minutos"
         },
         "social": [{
