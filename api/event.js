@@ -17,7 +17,7 @@ module.exports = {
         "img": "../../assets/images/speaker4.jpg",
         "talk": {
             "title": "I-Tier Framework",
-            "description": "Aprende sobre yy yyy yy yyyy de manera cool y entretenida y blah blah blah en 20 minutos"
+            "description": "Aprende sobre y yyy yy yyyy de manera cool y entretenida y blah blah blah en 20 minutos"
         },
         "social": [{
             "type": "github",
