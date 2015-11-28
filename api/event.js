@@ -1,6 +1,6 @@
 module.exports = {
     url:'http://www.meetup.com/es/Javascript-Chile/events/226968400/',
-    date:'3/12/2015',
+    date:'12/3/2015',
     speakers:[{
         "name": "Sebastian Witalec",
         "img": "../../assets/images/speaker5.png",
