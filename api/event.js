@@ -3,7 +3,7 @@ module.exports = {
     date:'12/3/2015',
     speakers:[{
         "name": "Sebastian Witalec",
-        "img": "../../assets/images/speaker5.png",
+        "img": "../../assets/images/speaker5.jpg",
         "talk": {
             "title": "NativeScript",
             "description": "Aprende sobre xxx xx xxxx xx de manera cool y entretenida y blah blah blah en 20 minutos"
