@@ -14,7 +14,7 @@ module.exports = React.createClass({
                             	<br/>{this.props.location.address.suburb}
                             	<br/>{this.props.location.address.city}
                             	<br/>
-                            	<br/><strong>Desde las {this.props.location.hours.start} a las {this.props.location.hours.end}</strong></p>
+                            	<br/><strong>Desde las {this.props.location.hours.start} a las {this.props.location.hours.end} hrs.</strong></p>
                     		</div>
                 		</div>
 		                <div className="col-sm-6">
