@@ -8,7 +8,7 @@
     "prebuild": "rm -rf index.html | rm -rf meetupjs.*.*.*.js | rm -rf *.woff2 |  rm -rf *.woff | rm -rf *.eot | rm -rf *.svg | rm -rf *.ttf | rm -rf meetupjs.*.*.*.css | rm -rf *.png | rm -rf *.jpg | rm -rf *.jpeg | rm -rf *.gif",
     "build": "npm run-script prebuild | node ./node_modules/webpack/bin/webpack.js",
     "preprod-build": "rm -rf index.html | rm -rf meetupjs.*.*.*.js | rm -rf *.woff2 |  rm -rf *.woff | rm -rf *.eot | rm -rf *.svg | rm -rf *.ttf | rm -rf meetupjs.*.*.*.css | rm -rf *.png | rm -rf *.jpg | rm -rf *.jpeg | rm -rf *.gif",
-    "prod-build": "npm run-script prebuild | set NODE_ENV=production node ./node_modules/webpack/bin/webpack.js",
+    "prod-build": "npm run-script prebuild | set NODE_ENV=production && node ./node_modules/webpack/bin/webpack.js",
     "git-commit": "git add -A . && git commit -m \"gh-pages update\"",
     "git-push": "git push origin master:gh-pages --force && npm run prebuild",
     "deploy": "npm run prod-build && npm run git-commit && npm run git-push"
