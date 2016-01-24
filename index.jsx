@@ -1,7 +1,6 @@
 require('font-awesome-webpack');
 window.$ = window.jQuery = require('jquery/dist/jquery.min.js');
 require('bootstrap-webpack');
-require('font-awesome-webpack');
 require('animate.css/animate.min.css')
 
 require('./assets/css/plugins/slick.styl');
