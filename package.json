@@ -9,7 +9,6 @@
     "build": "npm run-script prebuild | node ./node_modules/webpack/bin/webpack.js",
     "git-commit": "git add -A . && git commit -m \"gh-pages update\"",
     "git-push": "git push origin gh-pages --force && npm run prebuild",
-    "postgit-push" : "aagit checkout master && git pull --hard",
     "deploy": "npm run build && npm run git-commit && npm run git-push"
   },
   "repository": {
