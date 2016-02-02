@@ -30,7 +30,7 @@ module.exports = {
     'name': '¿Tu?',
     'img': '../assets/images/javascript.png',
     'talk': {
-      'title': {__html: '<a href="http://github.com/JavascriptChile/Meetups">Inscribe tu charla en nuestro github!</a>'},
+      'title': {__html: '<a href="http://github.com/JavascriptChile/Meetups">¡Inscribe tu charla en nuestro GitHub!</a>'},
       'description': 'Conjunto de mockups funcionales con (Ionic + Ionic Creator) y un backend con (Firebase + Angularfire) y actualizaciones en tiempo real de datos'
     },
     'social': [{
