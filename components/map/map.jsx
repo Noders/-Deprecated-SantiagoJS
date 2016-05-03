@@ -6,11 +6,11 @@ module.exports = React.createClass({
 	},
 	componentDidMount : function(){
 		var that = this;
-		this.state.grouponLoc = new google.maps.LatLng(-33.4150778, -70.6037647);
-		this.state.metroLoc = new google.maps.LatLng(-33.418145, -70.601353);
-		
+		this.state.grouponLoc = new google.maps.LatLng(-33.4123142, -70.5817503);
+		this.state.metroLoc = new google.maps.LatLng(-33.4123142, -70.5817503,17);
+
 		var options = {
-			zoom: 16, 
+			zoom: 16,
 			center: this.state.grouponLoc,
 		    disableDefaultUI: true,
 		    scrollwheel: false
@@ -34,7 +34,7 @@ module.exports = React.createClass({
 				window.alert('Directions request failed due to ' + status);
 			}
 		});
-		
+
 	},
 	render: function() {
 		return(
@@ -42,5 +42,5 @@ module.exports = React.createClass({
         		<div className="map" id="map_canvas"></div>
 			</div>
 		);
-	}	
+	}
 });

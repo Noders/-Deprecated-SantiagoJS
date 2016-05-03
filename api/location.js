@@ -1,12 +1,12 @@
 module.exports = {
-	'name': 'Groupon LatAm',
+	'name': 'MercadoLibre Chile',
 	'address': {
-		'street': 'Avenida Vitacura 2771, Piso 9',
+		'street': 'Avenida Apoquindo 4820, Torre 2, Piso 21',
 		'suburb': 'Las Condes',
 		'city': 'Santiago'
 	},
 	'hours': {
-		'start': '18:30',
-		'end': '20:30'
+		'start': '19:00',
+		'end': '21:00'
 	}
 };
