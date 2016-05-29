@@ -62,7 +62,7 @@ Yeah, have fun :D
 
 ### Useful Links ###
 
-* [Meetup JS CL Website](http://www.meetupjs.cl)
+* [Meetup JS CL Website](http://meetupjs.cl)
 * [Twitter](http://twitter.com/meetupjs_cl)
 
 ### License ###
